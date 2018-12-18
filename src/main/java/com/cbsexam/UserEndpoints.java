@@ -114,7 +114,7 @@ public class UserEndpoints {
   public Response deleteUser(String body) {
 
     User user = new Gson().fromJson(body, User.class);
-    // Read the json from body and transfer it to a user class
+    //    // Read the json from body and transfer it to a user class
     if (UserController.deleteUser(user.getToken()))
     // Return a response with status 200 and JSON as type
     {
@@ -141,9 +141,7 @@ public class UserEndpoints {
     // Return a response with status 200 and JSON as type
     return Response.status(200).entity("User updated").build();
   } else {
-
     return Response.status(400).entity("Could'nt update user").build();
-
   }
 }
 }
