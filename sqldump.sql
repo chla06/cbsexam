@@ -18,7 +18,7 @@
 --
 -- Table structure for table `address`
 --
-
+USE cbsexam;
 DROP TABLE IF EXISTS `address`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
  SET character_set_client = utf8mb4 ;
